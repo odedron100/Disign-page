@@ -2,18 +2,31 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: 'Nunito', sans-serif;
+}
+
 body{
     margin: 0;
     font-size: 0.875rem;
-}
+  }
+
+  .container{
+    max-width: 981px;
+    height: 100%;
+    border-right: 1px solid #C2C1C1;
+    border-left: 1px solid #C2C1C1;
+    margin: 0 auto;
+  }
 
 .main-container{
+  margin: 0;
   max-width: 981px;
-  height: 100vh;
-  padding-right: 10px;
-  padding-left: 10px;
+  height: 100%;
   box-sizing: content-box;
-  margin: 0 auto;
+  margin: 0px auto;
+  /* border-right: 1px solid #C2C1C1;
+  border-left: 1px solid #C2C1C1; */
 }
 
 .header-container{
@@ -23,8 +36,9 @@ body{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 auto;
+  margin:0 auto;
 }
+
 
 .header-container .main-header{
   display: flex;
@@ -38,10 +52,8 @@ body{
   line-height: 8.1875rem;
   text-align: start;
   color: #FFFFFF;
-  /* font-family: inconsolata, monospace; */
   font-size: 1.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.6rem;
+  /* letter-spacing: 0.6rem; */
 }
 
 .header-container .items-list{
@@ -68,17 +80,24 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.header-container .items-list >*:hover{
-  border-bottom: 5px solid green;
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
 
+.header-container .items-list >*:hover{
+  border-bottom: 5px solid green;
+}
+
+.item:hover{
+  color: green;
+  cursor: pointer;
+}
+
 .card{
-  margin-top: 77px;
   display: flex;
+  height: 310px;
+  margin-bottom: 79px;
+  padding-top: 77px;
 }
 
 .card img{
@@ -93,22 +112,67 @@ body{
   padding-inline-start: 20px;
 }
 
+.card .card-details h3{
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+  margin-top: 0;
+}
+
+.card .card-details p{
+  margin-bottom: 31px;
+  height: 114px;
+  width: 386px;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+.card .card-details p span{
+  white-space: pre-line;
+}
+
+.card .card-button{
+  width: 187px;
+  height: 41px;
+  margin: 0;
+  border-radius: 30px;
+  border:2px solid #C2C1C1;
+  background-color: white;
+  color: #C2C1C1;
+}
+
+.card3{
+  margin-bottom: 0px;
+  padding-bottom: 79px;
+}
+
 .footer-container{
   max-width: 981px;
   margin-top: 95px;
-  margin-bottom: 29px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #C2C1C1 ;
+  padding-top: 77px;
 }
 
 .next-button{
+  margin-top: 30px;
+  margin-inline-end: 55px;
   float: right;
+  background-color: white;
+  border: none;
 }
 
 .previous-button{
+  margin-top: 30px;
+  margin-inline-start: 55px;
   float: left;
+  background-color: white;
+  border: none;
 }
 
 .appendices{
   height: 315px;
   padding: 80px;
   text-align: center;
+  background-color: #F8F8F8;
 }
